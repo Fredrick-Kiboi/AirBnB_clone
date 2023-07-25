@@ -76,17 +76,15 @@ class HBNBCommand(cmd.Cmd):
                 self.do_count(cls)
             elif command == "show":
                 id = argSplit[1].split('"')[1]
-                self.do_show(cls + " " + id)
+                self.do_show(f"{cls} {id}")
             elif command == "destroy":
                 id = argSplit[1].split('"')[1]
-                self.do_destroy(cls + " " + id)
+                self.do_destroy(f"{cls} {id}")
             elif command == "update":
                 id = re.split('"|\'', argSplit[1])[1]
                 attr_name = re.split('"|\'', argSplit[1])[3]
                 attr_value = re.split('"|\'', argSplit[1])[5]
-                self.do_update(cls + " "
-                               + id + " " + attr_name + " "
-                               + attr_value)
+                self.do_update(f"{cls} {id} {attr_name} {attr_value}")
             else:
                 print("** command doesn't exist **")
         except Exception as e:
@@ -112,7 +110,7 @@ class HBNBCommand(cmd.Cmd):
         """
         cmd.Cmd.do_help(self, line)
 
-    def emptyline(line):
+    def emptyline(self):
         """
         plus enter doesnt execute anything
         """
@@ -152,7 +150,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return
         else:
-            K = args[0] + '.' + args[1]
+            K = f'{args[0]}.{args[1]}'
             if K in obj_dict:
                 print(obj_dict[K])
             else:
@@ -175,7 +173,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return
         else:
-            K = args[0] + '.' + args[1]
+            K = f'{args[0]}.{args[1]}'
             if K in obj_dict:
                 del obj_dict[K]
                 models.storage.save()
@@ -193,9 +191,7 @@ class HBNBCommand(cmd.Cmd):
             """
             Case scenario when only 'all' is called
             """
-            for obj in obj_dict.values():
-                str_rep = str(obj)
-                obj_str.append(str_rep)
+            obj_str.extend(str(obj) for obj in obj_dict.values())
             print(obj_str)
         else:
             """Case scenario when it is called either by
@@ -204,10 +200,11 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
                 return
             else:
-                for obj in obj_dict.values():
-                    if obj.__class__.__name__ == line:
-                        str_rep = str(obj)
-                        obj_str.append(str_rep)
+                obj_str.extend(
+                    str(obj)
+                    for obj in obj_dict.values()
+                    if obj.__class__.__name__ == line
+                )
                 print(obj_str)
 
     def do_update(self, line):
@@ -228,7 +225,7 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
         inst = args[1]
-        K = args[0] + '.' + args[1]
+        K = f'{args[0]}.{args[1]}'
         if K not in obj_dict:
             print("** no instance found **")
             return
@@ -242,8 +239,7 @@ class HBNBCommand(cmd.Cmd):
                     setattr(obj_dict[K], attr, value)
         else:
             attr_name = args[2]
-            if attr_name == "id" or attr_name == "created_at"\
-                    or attr_name == "updated_at":
+            if attr_name in ["id", "created_at", "updated_at"]:
                 print("** attribute id, created_at and\
                       updated_at cannot be updated  **")
                 return
@@ -264,17 +260,11 @@ class HBNBCommand(cmd.Cmd):
         retrieves number of instances of a class
         """
         args = shlex.split(line)
-        if len(args) == 1:
-            cls_name = args[0]
-        else:
-            cls_name = args[0] + '.' + args[1]
-
-        count = 0
+        cls_name = args[0] if len(args) == 1 else f'{args[0]}.{args[1]}'
         obj_dict = models.storage.all()
-        for obj in obj_dict.values():
-            if obj.__class__.__name__ == cls_name:
-                count += 1
-
+        count = sum(
+            1 for obj in obj_dict.values() if obj.__class__.__name__ == cls_name
+        )
         print(count)
 
 

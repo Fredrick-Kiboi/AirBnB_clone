@@ -15,13 +15,9 @@ class BaseModel:
         """
         if kwargs:
             for k, v in kwargs.items():
-                if k == "created_at":
+                if k in ["created_at", "updated_at"]:
                     v = datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%f")
-                elif k == "updated_at":
-                    v = datetime.strptime(v, "%Y-%m-%dT%H:%M:%S.%f")
-                elif k == "__class__":
-                    pass
-                else:
+                elif k != "__class__":
                     setattr(self, k, v)
         else:
             self.id = str(uuid.uuid4())
@@ -33,8 +29,7 @@ class BaseModel:
         """
         print class name and attributes
         """
-        return ("[{}] ({}) {}"
-                .format(self.__class__.__name__, self.id, self.__dict__))
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """

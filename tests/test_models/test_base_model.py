@@ -50,8 +50,9 @@ class Test_BaseModel(unittest.TestCase):
 
     def test_str(self):
         """Test if __str__ is working and of correct format"""
-        self.assertEqual(str(self.model), "[BaseModel] ({}) {}"
-                         .format(self.model.id, self.model.__dict__))
+        self.assertEqual(
+            str(self.model), f"[BaseModel] ({self.model.id}) {self.model.__dict__}"
+        )
 
     def test_to_dict(self):
         """Test if to_dict() returns dictionary"""
@@ -113,7 +114,7 @@ class Test_BaseModel(unittest.TestCase):
         storage.new(new_obj)
         new_storage_state = storage.all()
 
-        new_key = "{}.{}".format(type(new_obj).__name__, new_obj.id)
+        new_key = f"{type(new_obj).__name__}.{new_obj.id}"
         self.assertNotEqual(initial_storage_state, new_storage_state)
         self.assertTrue(new_key in new_storage_state)
 
@@ -122,4 +123,4 @@ class Test_BaseModel(unittest.TestCase):
         try:
             self.storage.reload()
         except Exception as e:
-            self.fail("test_reload failed: {}".format(str(e)))
+            self.fail(f"test_reload failed: {str(e)}")

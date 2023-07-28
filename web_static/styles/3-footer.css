@@ -1,12 +1,15 @@
 footer {
-  align-items: center;
-  background-color: white;
-  border-top: 1px solid #CCCCCC;
-  display: flex;
-  bottom: 0;
-  justify-content: center;
-  position: absolute;
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+}
+
+.text {
+    text-align: center;
 }

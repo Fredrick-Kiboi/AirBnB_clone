@@ -1,216 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Head -->
-    <head>
-        <meta charset="utf-8">
-        <title>AirBnB clone</title>
-        <!-- Styling -->
-        <link rel="icon" type="image/png" href="./images/icon.png">
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-        <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-        <link rel="stylesheet" type="text/css" href="styles/100-places.css">
-        <link>
-    </head>
 
-    <body>
+<head>
+  <meta charset="utf-8">
+  <title>AirBnB clone</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/4-common.css">
+  <link rel="stylesheet" href="styles/3-header.css">
+  <link rel="stylesheet" href="styles/3-footer.css">
+  <link rel="stylesheet" href="styles/6-filters.css">
+  <link rel="stylesheet" href="styles/100-places.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="images/icon.png">
+</head>
 
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                Logo
-            </div>
-        </header>
+<body>
+  <header></header>
 
-        <div class="container">
+  <div class="container">
+    <section class="filters">
+      <div class="locations">
+        <h3>States</h3>
+        <h4>California, Arizona...</h4>
+        <div class="popover">
+          <h2>Arizona:</h2>
+          <ul>
+            <li>Page</li>
+            <li>Page2</li>
+          </ul>
+          <h2>California:</h2>
+          <ul>
+            <li>San Francisco</li>
+            <li>Los Altos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="amenities">
+        <h3>Amenities</h3>
+        <h4>Internet, Kitchen...</h4>
+        <ul class="popover">
+          <li>Internet</li>
+          <li>TV</li>
+          <li>Kitchen</li>
+          <li>Iron</li>
+        </ul>
+      </div>
+      <button>Search</button>
+    </section>
 
-            <!-- Filters section -->
-            <section class="filters">
+    <section class="places">
+      <h1>Places</h1>
 
-                <!-- Locations-->
-                <div class="locations">
-                    <h3>States</h3>
-                    <h4>California, Arizona...</h4>
-                    <!-- Dropdown -->
-                        <ul class="popover">
-                            <li>
-                                <h2>Arizona:</h2>
-                                <ul>
-                                    <li>City 1</li>
-                                    <li>City 2</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h2>California:</h2>
-                                <ul>
-                                    <li>San Francisco</li>
-                                    <li>Los Altos</li>
-                                </ul>
-                            </li>
-                        </ul>
-                </div>
-
-                <!-- Amenities -->
-                <div class="amenities">
-                    <h3>Amenities</h3>
-                    <h4>Internet, Kitchen...</h4>
-                    <!-- Dropdown -->
-                        <ul class="popover">
-                            <li>Internet</li>
-                            <li>TV</li>
-                            <li>Kitchen</li>
-                            <li>Iron</li>
-                        </ul>
-                </div>
-
-                <!-- Search Button -->
-                <button class="button">Search</button>
-
-            </section>
-
-            <!-- Places Section -->
-            <section class="places">
-                <h1>Places</h1>
-
-                <article>
-                    <h2>My home</h2>
-                    <div class="price_by_night">$80</div>
-                    <div class="information">
-                        <div class="max-guest">2 Guests</div>
-                        <div class="number_rooms">1 Bedroom</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
-                    </div>
-                    <div class="user">
-                        <b>Owner: John Lennon</b>
-                    </div>
-                    <div class="description">
-                        <p>
-                            This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people.
-                            It is located at the center of Shangai and next to Subway line 1.
-                            1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
-                        </p>
-                    </div>
-                    <div class="amenities">
-                        <h2>Amenities</h2>
-                        <ul>
-                            <li>TV</li>
-                            <li>Wifi</li>
-                            <li>Pet friendly</li>
-                        </ul>
-                    </div>
-                    <div class="reviews">
-                        <h2>Reviews</h2>
-                        <ul>
-                            <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>
-                                    "The place was super amazing, we really had a good time.
-                                    My friends are emphatic about going back to the same spot next holiday.
-                                    Can't wait do a repeat."
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>Tiny house</h2>
-                    <div class="price_by_night">$65</div>
-                    <div class="information">
-                        <div class="max-guest">4 Guests</div>
-                        <div class="number_rooms">2 Bedrooms</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
-                    </div>
-                    <div class="user">
-                        <p>Owner: Adrienne</p>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Our place is a private, affordable stand-alone guests house centrally located just minutes to French quaters,
-                            downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is quaint, 400 square ft. with a full bath,
-                            mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also.
-                            We have a hand made counter area that adds character to the room and a great porch/dech to relax on and have a glass of Meriot.
-                        </p>
-                    </div>
-                    <div class="amenities">
-                        <h2>Amenities</h2>
-                        <ul>
-                            <li>TV</li>
-                            <li>Wifi</li>
-                            <li>Pet friendly</li>
-                        </ul>
-                    </div>
-                    <div class="reviews">
-                        <h2>Reviews</h2>
-                        <ul>
-                            <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>
-                                    "The place was super amazing, we really had a good time.
-                                    My friends are emphatic about going back to the same spot next holiday.
-                                    Can't wait do a repeat."
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>A suite</h2>
-                    <div class="price_by_night">$190</div>
-                    <div class="information">
-                        <div class="max-guest">6 Guests</div>
-                        <div class="number_rooms">3 Bedrooms</div>
-                        <div class="number_bathrooms">2 Bathrooms</div>
-                    </div>
-                    <div class="user">
-                        <p>Owner: James</p>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Welcome to our stylish suite! Conveniently located just minutes away from the city centre, it provides an excellent retreat
-                             for up to 6 guests. The suite is spacious, boasting high ceilings, three bedrooms and two bathrooms. The living room area is
-                              comfortably furnished, featuring a sofa that can be converted into an extra bed if needed. Our kitchenette is fully equipped
-                               and we take pride in our handmade counter area which adds a unique touch to the room. Outside, there is a large patio/deck
-                                where you can unwind and enjoy your evening glass of Cabernet Sauvignon.
-                        </p>
-                    </div>
-                    <div class="amenities">
-                        <h2>Amenities</h2>
-                        <ul>
-                            <li>TV</li>
-                            <li>Wifi</li>
-                            <li>Pet friendly</li>
-                        </ul>
-                    </div>
-                    <div class="reviews">
-                        <h2>Reviews</h2>
-                        <ul>
-                            <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>
-                                    "The place was super amazing, we really had a good time.
-                                    My friends are emphatic about going back to the same spot next holiday.
-                                    Can't wait do a repeat."
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-
-            </section>
-
+      <article>
+        <div class="name_and_price">
+          <h2>Bungalow</h2>
+          <div class="price_by_night">&#36;75</div>
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <div class="text">
-                Best School
-            </div>
-        </footer>
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>4 Guests
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>5 Rooms
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>3 Bathrooms
+          </div>
+        </div>
 
-    </body>
+        <div class="user">
+            <strong>Owner:</strong>John Lennon
+        </div>
+        <div class="description">
+            This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people.
+            It is located at the center of Shangai and next to Subway line 1.
+            1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
+        </p>
+        </div>
+
+        <div class="amenities">
+          <h2>Amenities</h2>
+          <ul>
+            <li>
+              <i class="fa fa-wifi" aria-hidden="true"></i>
+              <p>Wifi</p>
+            </li>
+            <li>
+              <i class="fa fa-paw" aria-hidden="true"></i>
+              <p>Pet friendly</p>
+            </li>
+            <li>
+              <i class="fa fa-print" aria-hidden="true"></i>
+              <p>Printer</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reviews">
+          <h2>1 Review</h2>
+          <h3>From Harley Quinn the December 12 2027</h3>
+          <ul>
+            <li>
+              <p>"The place was super amazing, we really had a good time.
+                My friends are emphatic about going back to the same spot next holiday.
+                Can't wait do a repeat."</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class="name_and_price">
+          <h2>My home</h2>
+          <div class="price_by_night">&#36;80</div>
+        </div>
+
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>2 Guests
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>1 Room
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>1 Bathroom
+          </div>
+        </div>
+
+        <div class="user">
+          <strong>Owner:</strong> Homer Simpsons
+        </div>
+
+        <div class="description">
+            Our place is a private, affordable stand-alone guests house centrally located just minutes to French quaters,
+            downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is quaint, 400 square ft. with a full bath,
+            mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also.
+            We have a hand made counter area that adds character to the room and a great porch/dech to relax on and have a glass of Meriot.
+        </div>
+
+        <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <p>Wifi</p>
+              </li>
+              <li>
+                <i class="fa fa-paw" aria-hidden="true"></i>
+                <p>Pet friendly</p>
+              </li>
+              <li>
+                <i class="fa fa-print" aria-hidden="true"></i>
+                <p>Printer</p>
+              </li>
+            </ul>
+          </div>
+
+
+        <div class="reviews">
+          <h2>2 Reviews</h2>
+          <h3>From Mary Jane the February 26 2017</h3>
+          <ul>
+            <li>
+              <p>
+                Cute is absolutely the correct adjective for this joy of a
+                stay. Five stars!!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class="name_and_price">
+          <h2>Tiny house</h2>
+          <div class="price_by_night">&#36;44</div>
+        </div>
+
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>1 Guest
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>1 Room
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>2 Bathrooms
+          </div>
+        </div>
+
+        <div class="user"><strong>Owner:</strong> James</div>
+        <div class="description">
+            Welcome to our stylish suite! Conveniently located just minutes away from the city centre, it provides an excellent retreat
+            for up to 6 guests. The suite is spacious, boasting high ceilings, three bedrooms and two bathrooms. The living room area is
+             comfortably furnished, featuring a sofa that can be converted into an extra bed if needed. Our kitchenette is fully equipped
+              and we take pride in our handmade counter area which adds a unique touch to the room. Outside, there is a large patio/deck
+               where you can unwind and enjoy your evening glass of Cabernet Sauvignon.
+        </div>
+
+        <div class="amenities">
+          <h2>Amenities</h2>
+          <ul>
+            <li>
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+              <p>Video games</p>
+            </li>
+            <li>
+              <i class="fa fa-shower" aria-hidden="true"></i>
+              <p>Shower</p>
+            </li>
+            <li>
+              <i class="fa fa-fire" aria-hidden="true"></i>
+              <p>Litness</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reviews">
+          <h2>2 Reviews</h2>
+          <h3>From The Guy the June 18 2024</h3>
+          <ul>
+            <li>
+              <p>
+                The place was wild bruv. We had a hella lit time. Me and my mates had the illest bruv.
+                We also enjoyed the locals, they definitely know how to throw killer parties.
+              </p>
+            </li>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    Best School
+  </footer>
+</body>
 
 </html>

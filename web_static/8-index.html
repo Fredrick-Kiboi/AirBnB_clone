@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
         <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
         <link rel="stylesheet" type="text/css" href="styles/8-places.css">
-        <link>
     </head>
 
     <body>
@@ -34,22 +33,18 @@
                     <h3>States</h3>
                     <h4>California, Arizona...</h4>
                     <!-- Dropdown -->
-                        <ul class="popover">
-                            <li>
-                                <h2>Arizona:</h2>
-                                <ul>
-                                    <li>City 1</li>
-                                    <li>City 2</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h2>California:</h2>
-                                <ul>
-                                    <li>San Francisco</li>
-                                    <li>Los Altos</li>
-                                </ul>
-                            </li>
+                    <div class="popover">
+                        <h2>Arizona:</h2>
+                        <ul>
+                            <li>Page</li>
+                            <li>Page2</li>
                         </ul>
+                        <h2>California:</h2>
+                        <ul>
+                            <li>San Francisco</li>
+                            <li>Los Altos</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Amenities -->
@@ -66,7 +61,7 @@
                 </div>
 
                 <!-- Search Button -->
-                <button class="button">Search</button>
+                <button>Search</button>
 
             </section>
 
@@ -74,15 +69,18 @@
             <section class="places">
                 <h1>Places</h1>
                 <article>
-                    <h2>My home</h2>
-                    <div class="price_by_night">$80</div>
+                    <div class="top_part">
+                        <h2>My home</h2>
+                        <div class="price_by_night">$80</div>
+                    </div>
                     <div class="information">
-                        <div class="max-guest">2 Guests</div>
-                        <div class="number_rooms">1 Bedroom</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
+                        <div class="max_guest">
+                            <span class="text">2 Guests</span></div>
+                        <div class="number_rooms"><span class="text">1 Bedroom</span></div>
+                        <div class="number_bathrooms"><span class="text">1 Bathroom</span></div>
                     </div>
                     <div class="user">
-                        <b>Owner: John Lennon</b>
+                        <strong>Owner:</strong>John Lennon
                     </div>
                     <div class="description">
                         <p>
@@ -93,15 +91,17 @@
                     </div>
                 </article>
                 <article>
-                    <h2>Tiny house</h2>
-                    <div class="price_by_night">$65</div>
+                    <div class="top_part">
+                        <h2>Tiny house</h2>
+                        <div class="price_by_night">$65</div>
+                    </div>
                     <div class="information">
-                        <div class="max-guest">4 Guests</div>
-                        <div class="number_rooms">2 Bedrooms</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
+                        <div class="max_guest"><span class="text">4 Guests</span></div>
+                        <div class="number_rooms"><span class="text">2 Bedrooms</span></div>
+                        <div class="number_bathrooms"><span class="text">1 Bathroom</span></div>
                     </div>
                     <div class="user">
-                        <p>Owner: Adrienne</p>
+                        <strong>Owner:</strong> Adrienne
                     </div>
                     <div class="description">
                         <p>
@@ -113,15 +113,17 @@
                     </div>
                 </article>
                 <article>
-                    <h2>A suite</h2>
-                    <div class="price_by_night">$190</div>
+                    <div class="top_part">
+                        <h2>Suite</h2>
+                        <div class="price_by_night">$190</div>
+                    </div>
                     <div class="information">
-                        <div class="max-guest">6 Guests</div>
-                        <div class="number_rooms">3 Bedrooms</div>
-                        <div class="number_bathrooms">2 Bathrooms</div>
+                        <div class="max_guest"><span class="text">6 Guests</span></div>
+                        <div class="number_rooms"><span class="text">3 Bedrooms</span></div>
+                        <div class="number_bathrooms"><span class="text">2 Bathrooms</span></div>
                     </div>
                     <div class="user">
-                        <p>Owner: James</p>
+                        <strong>Owner: </strong> James
                     </div>
                     <div class="description">
                         <p>
@@ -138,9 +140,7 @@
 
         <!-- Footer -->
         <footer>
-            <div class="text">
                 Best School
-            </div>
         </footer>
 
     </body>

@@ -1,26 +1,20 @@
-/*
- * === Global style ===
- */
-
-/* Body style */
 body {
+    margin: 0;
+    padding: 0;
     color: #484848;
-    font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow: auto;
+}
 
-  /* Block horizontal scrolling */
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Container style */
-  .container {
-    margin: 30px auto;
+.container {
     max-width: 1000px;
-  }
+    margin: 30px auto;
+}
 
-  /* Strong style */
-  strong {
-    font-weight: bold;
-  }
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 5px;
+    }
+}

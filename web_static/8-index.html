@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Head -->
+
     <head>
         <meta charset="utf-8">
-        <title>AirBnB clone</title>
-        <!-- Styling -->
-        <link rel="icon" type="image/png" href="./images/icon.png">
+
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <link rel="stylesheet" type="text/css" href="styles/4-common.css">
         <link rel="stylesheet" type="text/css" href="styles/3-header.css">
         <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
         <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
         <link rel="stylesheet" type="text/css" href="styles/8-places.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
+
+        <title>
+            Airbnb Clone
+        </title>
     </head>
 
     <body>
-
-        <!-- Header -->
         <header>
             <div class="logo">
                 Logo
@@ -24,125 +25,170 @@
         </header>
 
         <div class="container">
-
-            <!-- Filters section -->
             <section class="filters">
-
-                <!-- Locations-->
                 <div class="locations">
                     <h3>States</h3>
                     <h4>California, Arizona...</h4>
-                    <!-- Dropdown -->
+
                     <div class="popover">
-                        <h2>Arizona:</h2>
                         <ul>
-                            <li>Page</li>
-                            <li>Page2</li>
+                            <li class="strong">Arizona:</li>
+                            <li class="left">Phoenix</li>
+                            <li class="left">Scottsdale</li>
                         </ul>
-                        <h2>California:</h2>
+
                         <ul>
-                            <li>San Francisco</li>
-                            <li>Los Altos</li>
+                            <li class="strong">California:</li>
+                            <li class="left">San Francisco</li>
+                            <li class="left">Los Altos</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Amenities -->
                 <div class="amenities">
                     <h3>Amenities</h3>
                     <h4>Internet, Kitchen...</h4>
-                    <!-- Dropdown -->
-                        <ul class="popover">
+
+                    <div class="popover">
+                        <ul>
                             <li>Internet</li>
-                            <li>TV</li>
+                            <li>Tv</li>
                             <li>Kitchen</li>
                             <li>Iron</li>
                         </ul>
+                    </div>
                 </div>
 
-                <!-- Search Button -->
-                <button>Search</button>
-
+                <button class="btn">
+                    Search
+                </button>
             </section>
 
-            <!-- Places Section -->
             <section class="places">
                 <h1>Places</h1>
+
                 <article>
-                    <div class="top_part">
-                        <h2>My home</h2>
-                        <div class="price_by_night">$80</div>
+                    <h2>Postie's Place</h2>
+
+                    <div class="price_by_night">
+                        $350
                     </div>
+
                     <div class="information">
-                        <div class="max_guest">
-                            <span class="text">2 Guests</span></div>
-                        <div class="number_rooms"><span class="text">1 Bedroom</span></div>
-                        <div class="number_bathrooms"><span class="text">1 Bathroom</span></div>
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                3 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                3 Bedrooms
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                2 Bathrooms
+                            </div>
+                        </div>
                     </div>
+
                     <div class="user">
-                        <strong>Owner:</strong>John Lennon
+                        <b class="owner">Owner: </b>Post Malone
                     </div>
+
                     <div class="description">
-                        <p>
-                            This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people.
-                            It is located at the center of Shangai and next to Subway line 1.
-                            1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
-                        </p>
+                        Welcome to my city sanctuary! This joint got three fly bedrooms for your crew of three - all cozy and chill. The spot rocks one sleek bathroom for all your refresh needs. It's all 'bout that urban life here. Claim this crib, feel the vibe, make some memories. Peace!
                     </div>
                 </article>
+
                 <article>
-                    <div class="top_part">
-                        <h2>Tiny house</h2>
-                        <div class="price_by_night">$65</div>
+                    <h2>Zion</h2>
+
+                    <div class="price_by_night">
+                        $150
                     </div>
+
                     <div class="information">
-                        <div class="max_guest"><span class="text">4 Guests</span></div>
-                        <div class="number_rooms"><span class="text">2 Bedrooms</span></div>
-                        <div class="number_bathrooms"><span class="text">1 Bathroom</span></div>
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                2 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                1 Bedroom
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                1 Bathroom
+                            </div>
+                        </div>
                     </div>
+
                     <div class="user">
-                        <strong>Owner:</strong> Adrienne
+                        <b class="owner">Owner: </b>Chronixx
                     </div>
+
                     <div class="description">
-                        <p>
-                            Our place is a private, affordable stand-alone guests house centrally located just minutes to French quaters,
-                            downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is quaint, 400 square ft. with a full bath,
-                            mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also.
-                            We have a hand made counter area that adds character to the room and a great porch/dech to relax on and have a glass of Meriot.
-                        </p>
+                        Welcome to yuh home away from home! Dis here place got tree serene bedrooms fi yuh crew of tree - pure comfort, pure relaxation. We also got one nice up bathroom fi all yuh freshenin' up needs. Immerse yuhself inna di urban life right yah so. Come tek over dis yard, feel di irie vibes and create some lasting memories. Jah Bless!
                     </div>
                 </article>
+
                 <article>
-                    <div class="top_part">
-                        <h2>Suite</h2>
-                        <div class="price_by_night">$190</div>
+                    <h2>Floyd's Palace</h2>
+
+                    <div class="price_by_night">
+                        $850
                     </div>
+
                     <div class="information">
-                        <div class="max_guest"><span class="text">6 Guests</span></div>
-                        <div class="number_rooms"><span class="text">3 Bedrooms</span></div>
-                        <div class="number_bathrooms"><span class="text">2 Bathrooms</span></div>
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                5 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                5 Bedrooms
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                3 Bathrooms
+                            </div>
+                        </div>
                     </div>
+
                     <div class="user">
-                        <strong>Owner: </strong> James
+                        <b class="owner">Owner: </b>Floyd "Money" Mayweather
                     </div>
+
                     <div class="description">
-                        <p>
-                            Welcome to our stylish suite! Conveniently located just minutes away from the city centre, it provides an excellent retreat
-                             for up to 6 guests. The suite is spacious, boasting high ceilings, three bedrooms and two bathrooms. The living room area is
-                              comfortably furnished, featuring a sofa that can be converted into an extra bed if needed. Our kitchenette is fully equipped
-                               and we take pride in our handmade counter area which adds a unique touch to the room. Outside, there is a large patio/deck
-                                where you can unwind and enjoy your evening glass of Cabernet Sauvignon.
-                        </p>
+                        Step into luxury living at Floyd Mayweather's extravagance level. Welcome to this multi-level mansion with three plush, king-sized bedrooms - fit for champions. Each of these rooms has been carefully curated for comfort and style. The grandeur doesn't stop there - the mansion features an opulent bathroom designed to provide paramount relaxation, keeping those champions fresh and rejuvenated.
+                        Located in the heart of the city, this mansion is a celebration of urban opulence. Enjoy unparalleled city views from every corner while being just a stone's throw away from the bustling city vibes. Here, life's not just about living, it's about flourishing. So come, claim this mansion, live the Money Team lifestyle and make unforgettable memories in true Mayweather fashion. Let's make it happen, champ!
                     </div>
                 </article>
             </section>
         </div>
 
-        <!-- Footer -->
         <footer>
-                Best School
+            Best School
         </footer>
-
     </body>
-
 </html>

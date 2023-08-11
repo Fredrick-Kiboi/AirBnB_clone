@@ -1,239 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AirBnB clone</title>
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/102-common.css">
-  <link rel="stylesheet" href="styles/102-header.css">
-  <link rel="stylesheet" href="styles/102-footer.css">
-  <link rel="stylesheet" href="styles/102-filters.css">
-  <link rel="stylesheet" href="styles/102-places.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="icon" href="images/icon.png">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-  <header></header>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/102-common.css">
+        <link rel="stylesheet" type="text/css" href="styles/102-header.css">
+        <link rel="stylesheet" type="text/css" href="styles/102-footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/102-filters.css">
+        <link rel="stylesheet" type="text/css" href="styles/102-places.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
 
-  <div class="container">
-    <section class="filters">
-      <div class="locations">
-        <h3>States</h3>
-        <h4>California, Arizona...</h4>
-        <div class="popover">
-          <h2>Arizona:</h2>
-          <ul>
-            <li>Page</li>
-            <li>Page2</li>
-          </ul>
-          <h2>California:</h2>
-          <ul>
-            <li>San Francisco</li>
-            <li>Los Altos</li>
-          </ul>
+        <title>
+            Airbnb Clone
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                Logo
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="filters">
+                <div class="locations">
+                    <h3>States</h3>
+                    <h4>California, Arizona...</h4>
+
+                    <div class="popover">
+                        <ul>
+                            <li class="strong">Arizona:</li>
+                            <li class="left">Phoenix</li>
+                            <li class="left">Scottsdale</li>
+                        </ul>
+
+                        <ul>
+                            <li class="strong">California:</li>
+                            <li class="left">San Francisco</li>
+                            <li class="left">Los Altos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="amenities">
+                    <h3>Amenities</h3>
+                    <h4>Internet, Kitchen...</h4>
+
+                    <div class="popover">
+                        <ul>
+                            <li>Internet</li>
+                            <li>Tv</li>
+                            <li>Kitchen</li>
+                            <li>Iron</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn">
+                    Search
+                </button>
+            </section>
+
+            <section class="places">
+                <h1>Places</h1>
+
+                <article>
+                    <h2>Postie's Place</h2>
+
+                    <div class="price_by_night">
+                        $350
+                    </div>
+
+                    <div class="information">
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                3 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                3 Bedrooms
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                2 Bathrooms
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <b class="owner">Owner: </b>Post Malone
+                    </div>
+
+                    <div class="description">
+                        Welcome to my city sanctuary! This joint got three fly bedrooms for your crew of three - all cozy and chill. The spot rocks one sleek bathroom for all your refresh needs. It's all 'bout that urban life here. Claim this crib, feel the vibe, make some memories. Peace!
+                    </div>
+
+                    <div class="amenities">
+                        <h2 class="text">Amenities</h2>
+
+                        <ul>
+                            <li><img src="images/icon_tv.png" alt="TV"><span class="icon_text">Tv</span></li>
+                            <li><img src="images/icon_pets.png" alt="pets"><span class="icon_text">Pet Friendly</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="reviews">
+                        <h2 class="text">2 Reviews</h2>
+                        <ul>
+                            <li><h3>From Malik Johnson, On March 25th, 2022</h3></li>
+                            <li><p>🖐️ "Yo! This crib was straight fire, no cap. Super fly spot, real clean, and the vibe was totally chill. Postie was mad cool too, showed mad respect. Ya boy felt right at home. Definitely coming back here next time I hit the city. Peace."</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3>From Vanessa Davis, On March 29th, 2022</h3></li>
+                            <li><p>✌️ "Hey fam! This place was lit! It was mad comfy and the aesthetics were on point - straight outta Pinterest, for real! Postie kept it 100, mad warm, and welcoming. Totally felt the love and the positive energy. Will be my go-to spot for my city breaks."</p></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>Zion</h2>
+
+                    <div class="price_by_night">
+                        $150
+                    </div>
+
+                    <div class="information">
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                2 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                1 Bedroom
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                1 Bathroom
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <b class="owner">Owner: </b>Chronixx
+                    </div>
+
+                    <div class="description">
+                        Welcome to yuh home away from home! Dis here place got tree serene bedrooms fi yuh crew of tree - pure comfort, pure relaxation. We also got one nice up bathroom fi all yuh freshenin' up needs. Immerse yuhself inna di urban life right yah so. Come tek over dis yard, feel di irie vibes and create some lasting memories. Jah Bless!
+                    </div>
+
+                    <div class="amenities">
+                        <h2 class="text">Amenities</h2>
+
+                        <ul>
+                            <li><img src="images/icon_pets.png" alt="pets"><span class="icon_text">Pet Friendly</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="reviews">
+                        <h2 class="text">1 Review</h2>
+                        <ul>
+                            <li><h3>From Amara Kingston, On April 20th, 2022</h3></li>
+                            <li><p>"Hey mon! This place me tell yuh, top-notch, it be! Just the perf oasis of calm I needed for some zen time, yet so vibrant for mi party mood. Di host throw down some serious hospitality, making mi feel so welcome, it like mi own yard. Quick shoutout to chronixx. Can't wait to run back here on mi next journey. Jah bless!"</p></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>Floyd's Palace</h2>
+
+                    <div class="price_by_night">
+                        $850
+                    </div>
+
+                    <div class="information">
+                        <div class="max-guest">
+                            <img src="images/icon_group.png" alt="guests">
+                            <div class="text">
+                                5 Guests
+                            </div>
+                        </div>
+
+                        <div class="number_rooms">
+                            <img src="images/icon_bed.png" alt="bedrooms">
+                            <div class="text">
+                                5 Bedrooms
+                            </div>
+                        </div>
+
+                        <div class="number_bathrooms">
+                            <img src="images/icon_bath.png" alt="bathrooms">
+                            <div class="text">
+                                3 Bathrooms
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <b class="owner">Owner: </b>Floyd "Money" Mayweather
+                    </div>
+
+                    <div class="description">
+                        Step into luxury living at Floyd Mayweather's extravagance level. Welcome to this multi-level mansion with three plush, king-sized bedrooms - fit for champions. Each of these rooms has been carefully curated for comfort and style. The grandeur doesn't stop there - the mansion features an opulent bathroom designed to provide paramount relaxation, keeping those champions fresh and rejuvenated.
+                        Located in the heart of the city, this mansion is a celebration of urban opulence. Enjoy unparalleled city views from every corner while being just a stone's throw away from the bustling city vibes. Here, life's not just about living, it's about flourishing. So come, claim this mansion, live the Money Team lifestyle and make unforgettable memories in true Mayweather fashion. Let's make it happen, champ!
+                    </div>
+
+                    <div class="amenities">
+                        <h2 class="text">Amenities</h2>
+
+                        <ul>
+                            <li><img src="images/icon_tv.png" alt="TV"><span class="icon_text">Tv</span></li>
+                            <li><img src="images/icon_wifi.png" alt="Wi-Fi"><span class="icon_text">Wi-Fi</span></li>
+                            <li><img src="images/icon_pets.png" alt="pets"><span class="icon_text">Pet Friendly</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="reviews">
+                        <h2 class="text">3 Reviews</h2>
+                        <ul>
+                            <li><h3>From Sheikh Khalid Al Nahyan, On April 1st, 2022</h3></li>
+                            <li><p>"منزل مذهل يستحق كل الإشادة. وقد أذهلتني الخدمة الرائعة والمناظر الخلابة. تقديري الكامل للمضيف على حسن الضيافة والترحيب. سأعود بالتأكيد في رحلتي المقبلة إلى المدينة."</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3>From Prince Django Mtoto wa Simba, On April 3rd, 2022</h3></li>
+                            <li><p>Asante sana! Hapa ni mahali pazuri kama nyumbani. Kila kitu kina vibonzo na kuvutia. Ukarimu wa mwenyeji umezidi matarajio yangu. Nitakuwa natamani kurudi kwenye hii kasri."</p></li>
+                        </ul>
+                        <ul>
+                            <li><h3>From Lady Isabella Windsor, On April 5th, 2022</h3></li>
+                            <li><p>"A truly splendid establishment, filled with grandeur at every turn. The service was impeccable, decor reminiscent of pure English elegance and the vistas, absolutely stunning. The host was generous and warm, a genuine pleasure to deal with. We shall certainly return for our next sojourn in the city."</p></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         </div>
-      </div>
-      <div class="amenities">
-        <h3>Amenities</h3>
-        <h4>Internet, Kitchen...</h4>
-        <ul class="popover">
-          <li>Internet</li>
-          <li>TV</li>
-          <li>Kitchen</li>
-          <li>Iron</li>
-        </ul>
-      </div>
-      <button>Search</button>
-    </section>
 
-    <section class="places">
-      <h1>Places</h1>
-      <article>
-        <div class="name_and_price">
-          <h2>Baze</h2>
-          <div class="price_by_night">&#36;7</div>
-        </div>
-
-        <div class="information">
-          <div class="max_guest">
-            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
-            <br>2 Guests
-          </div>
-          <div class="number_rooms">
-            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
-            <br>1 Room
-          </div>
-          <div class="number_bathrooms">
-            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
-            <br>0 Bathrooms
-          </div>
-        </div>
-
-        <div class="user">
-          <strong>Owner:</strong> Generali
-        </div>
-
-        <div class="description">
-          "Hii ni maskani standard ka-bedsitter. Iko kwa mtaa poa yenye imetulia."
-        </div>
-
-        <div class="amenities">
-          <h2>Amenities</h2>
-          <ul>
-            <li>
-              <i class="fa fa-gamepad" aria-hidden="true"></i>
-              <p>Video games</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="reviews">
-          <h2>Reviews</h2>
-          <h3>From Morio on the February 26 2057</h3>
-          <ul>
-            <li>
-              <p>
-                "Kulala kwa hio keja ilikuwa wagwan. Crib ilikuwa safi na pia design yenyewe ni kali. Wi-Fi ilikuwa mwenda na kila kitu ilikuwa freshi. Msee wa nyumba alinice alikuwa anatuchapia stori za jaba. Wacha tuseme nilienjoy."
-              </p>
-            </li>
-          </ul>
-          <h3>From Bella on June 1 2018</h3>
-          <ul>
-            <li>
-              <p>
-                "The Wi-Fi was strong enough to argue with strangers on social media and the bed was comfy enough to forget about said arguments. 5 stars!"
-              </p>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article>
-        <div class="name_and_price">
-          <h2>Thee Villa</h2>
-          <div class="price_by_night">&#36;44</div>
-        </div>
-
-        <div class="information">
-          <div class="max_guest">
-            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
-            <br>1 Guest
-          </div>
-          <div class="number_rooms">
-            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
-            <br>1 Room
-          </div>
-          <div class="number_bathrooms">
-            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
-            <br>2 Bathrooms
-          </div>
-        </div>
-
-        <div class="user"><strong>Owner:</strong> The Simpsons</div>
-        <div class="description">
-          Our place is a private, affordable stand-alone guests house centrally located just minutes to French quaters, downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is quaint, 400 square ft. with a full bath, mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. We have a hand made counter area that adds character to the room and a great porch/dech to relax on and have a glass of Meriot.
-        </div>
-
-        <div class="amenities">
-          <h2>Amenities</h2>
-          <ul>
-            <li>
-              <i class="fa fa-gamepad" aria-hidden="true"></i>
-              <p>Video games</p>
-            </li>
-            <li>
-              <i class="fa fa-shower" aria-hidden="true"></i>
-              <p>Shower</p>
-            </li>
-            <li>
-              <i class="fa fa-fire" aria-hidden="true"></i>
-              <p>Litness</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="reviews">
-          <h2>Reviews</h2>
-          <h3>From the Joker on the June 18 2217</h3>
-          <ul>
-            <li>
-              <p>
-                "Do you ever get the feeling that you're being watched? Well, you would here. The resident cat refuses to respect privacy. However, he does give truly world-class snuggles. World. Class. Snuggles."
-              </p>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article>
-        <div class="name_and_price">
-          <h2>Five Star Keja</h2>
-          <div class="price_by_night">&#36;75</div>
-        </div>
-
-        <div class="information">
-          <div class="max_guest">
-            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
-            <br>4 Guests
-          </div>
-          <div class="number_rooms">
-            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
-            <br>5 Rooms
-          </div>
-          <div class="number_bathrooms">
-            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
-            <br>3 Bathrooms
-          </div>
-        </div>
-
-        <div class="user">
-          <strong>Owner:</strong> Mejja
-        </div>
-        <div class="description">
-          Standard, non-occupied, five-bed, three-bath house in a quiet
-          neighborhood. Based on all the other options on this site, I
-          shouldn't need to say anything else at all.
-        </div>
-
-        <div class="amenities">
-          <h2>Amenities</h2>
-          <ul>
-            <li>
-              <i class="fa fa-wifi" aria-hidden="true"></i>
-              <p>Wifi</p>
-            </li>
-            <li>
-              <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
-              <p>Air conditioning</p>
-            </li>
-            <li>
-              <i class="fa fa-coffee" aria-hidden="true"></i>
-              <p>Coffee machine</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="reviews">
-          <h2>Review</h2>
-          <h3>From Brathe the December 29 2016</h3>
-          <ul>
-            <li>
-              <p>"Nimecheki hii crib ya Airbnb, msee wacha niko show. Keja iko fiti sana. uko ni Wi-Fi noma si mchezo. Alafu vitanda, huko ukileta mama...wacha tu. Mwenyeji anajua kutreat watu. Huko lazima nitacome through tena!""</p>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-    </section>
-  </div>
-
-  <footer>
-    Best School
-  </footer>
-</body>
-
+        <footer>
+            Best School
+        </footer>
+    </body>
 </html>

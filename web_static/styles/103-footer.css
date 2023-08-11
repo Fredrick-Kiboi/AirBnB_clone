@@ -1,14 +1,18 @@
-/*
- * === Footer style ===
- */
-
-/* Footer style */
+/* convert pixels to rem */
 footer {
-    align-items: center;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    display: flex;
-    height: 60px;
-    justify-content: center;
+    background: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+    height: 3.75rem;
     width: 100%;
-  }
+    border-top: 1px solid #ababab; /* Darken border color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 37.5rem) {
+    footer {
+        height: 2.5rem;
+    }
+}
